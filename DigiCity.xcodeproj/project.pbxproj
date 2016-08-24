@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A2FB521D6E123100EDCB9C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2FB511D6E123100EDCB9C /* LoginViewController.m */; };
+		75A2FB551D6E177700EDCB9C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2FB541D6E177700EDCB9C /* SignUpViewController.m */; };
 		D84400331D6D77E600B8ADF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400321D6D77E600B8ADF3 /* main.m */; };
 		D84400361D6D77E600B8ADF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400351D6D77E600B8ADF3 /* AppDelegate.m */; };
 		D84400391D6D77E600B8ADF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400381D6D77E600B8ADF3 /* ViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75A2FB501D6E123100EDCB9C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		75A2FB511D6E123100EDCB9C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		75A2FB531D6E177700EDCB9C /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		75A2FB541D6E177700EDCB9C /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		D844002E1D6D77E600B8ADF3 /* DigiCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84400321D6D77E600B8ADF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D84400341D6D77E600B8ADF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A2FB4C1D6E117D00EDCB9C /* LoginAndSignUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75A2FB501D6E123100EDCB9C /* LoginViewController.h */,
+				75A2FB511D6E123100EDCB9C /* LoginViewController.m */,
+				75A2FB531D6E177700EDCB9C /* SignUpViewController.h */,
+				75A2FB541D6E177700EDCB9C /* SignUpViewController.m */,
+			);
+			path = LoginAndSignUpControllers;
+			sourceTree = "<group>";
+		};
 		D84400251D6D77E600B8ADF3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,7 @@
 				D84400351D6D77E600B8ADF3 /* AppDelegate.m */,
 				D84400371D6D77E600B8ADF3 /* ViewController.h */,
 				D84400381D6D77E600B8ADF3 /* ViewController.m */,
+				75A2FB4C1D6E117D00EDCB9C /* LoginAndSignUpControllers */,
 				D84400671D6DA25A00B8ADF3 /* Helper */,
 				D844006D1D6DA7A400B8ADF3 /* TabNavigationControllers */,
 				D844004B1D6D9D2A00B8ADF3 /* MainTabBarController */,
@@ -336,6 +354,7 @@
 				D844005F1D6DA01300B8ADF3 /* FeedViewController.m in Sources */,
 				D84400661D6DA0EB00B8ADF3 /* EventViewController.m in Sources */,
 				D844005C1D6DA00600B8ADF3 /* AddPostViewController.m in Sources */,
+				75A2FB551D6E177700EDCB9C /* SignUpViewController.m in Sources */,
 				D844007E1D6DA82000B8ADF3 /* AddPostNavigationController.m in Sources */,
 				D84400551D6D9EFC00B8ADF3 /* CityItemViewController.m in Sources */,
 				D84400811D6DA83200B8ADF3 /* NotificationNavigationController.m in Sources */,
@@ -344,6 +363,7 @@
 				D844004E1D6D9D5600B8ADF3 /* MainTabBarController.m in Sources */,
 				D84400331D6D77E600B8ADF3 /* main.m in Sources */,
 				D84400751D6DA7E400B8ADF3 /* FeedNavigationController.m in Sources */,
+				75A2FB521D6E123100EDCB9C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +512,7 @@
 				D84400471D6D77E600B8ADF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
