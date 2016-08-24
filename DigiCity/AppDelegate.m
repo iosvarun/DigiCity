@@ -42,4 +42,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)setMainTabbarControllerAsWindowRoot {
+    
+    if (self.mainTabBarController) {
+        self.mainTabBarController = nil;
+    }
+    
+    self.mainTabBarController = [[UIStoryboard storyboardWithName:@"Main_StoryBoard" bundle:nil] instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    self.window.rootViewController = self.mainTabBarController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setNeedsDisplay];
+}
+
 @end

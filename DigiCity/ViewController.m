@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Constants.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -13,6 +13,18 @@
 		D844003C1D6D77E600B8ADF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D844003A1D6D77E600B8ADF3 /* Main.storyboard */; };
 		D844003E1D6D77E600B8ADF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D844003D1D6D77E600B8ADF3 /* Assets.xcassets */; };
 		D84400411D6D77E600B8ADF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D844003F1D6D77E600B8ADF3 /* LaunchScreen.storyboard */; };
+		D844004A1D6D851B00B8ADF3 /* Main_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84400491D6D851B00B8ADF3 /* Main_StoryBoard.storyboard */; };
+		D844004E1D6D9D5600B8ADF3 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844004D1D6D9D5600B8ADF3 /* MainTabBarController.m */; };
+		D84400551D6D9EFC00B8ADF3 /* CityItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400541D6D9EFC00B8ADF3 /* CityItemViewController.m */; };
+		D844005C1D6DA00600B8ADF3 /* AddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844005B1D6DA00600B8ADF3 /* AddPostViewController.m */; };
+		D844005F1D6DA01300B8ADF3 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844005E1D6DA01300B8ADF3 /* FeedViewController.m */; };
+		D84400621D6DA04000B8ADF3 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400611D6DA04000B8ADF3 /* NotificationViewController.m */; };
+		D84400661D6DA0EB00B8ADF3 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400651D6DA0EB00B8ADF3 /* EventViewController.m */; };
+		D84400751D6DA7E400B8ADF3 /* FeedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400741D6DA7E400B8ADF3 /* FeedNavigationController.m */; };
+		D84400781D6DA7FC00B8ADF3 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400771D6DA7FC00B8ADF3 /* EventNavigationController.m */; };
+		D844007B1D6DA80900B8ADF3 /* CityNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844007A1D6DA80900B8ADF3 /* CityNavigationController.m */; };
+		D844007E1D6DA82000B8ADF3 /* AddPostNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844007D1D6DA82000B8ADF3 /* AddPostNavigationController.m */; };
+		D84400811D6DA83200B8ADF3 /* NotificationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400801D6DA83200B8ADF3 /* NotificationNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,30 @@
 		D844003D1D6D77E600B8ADF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84400401D6D77E600B8ADF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84400421D6D77E600B8ADF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84400491D6D851B00B8ADF3 /* Main_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_StoryBoard.storyboard; sourceTree = "<group>"; };
+		D844004C1D6D9D5600B8ADF3 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		D844004D1D6D9D5600B8ADF3 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		D84400531D6D9EFC00B8ADF3 /* CityItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityItemViewController.h; sourceTree = "<group>"; };
+		D84400541D6D9EFC00B8ADF3 /* CityItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityItemViewController.m; sourceTree = "<group>"; };
+		D844005A1D6DA00600B8ADF3 /* AddPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostViewController.h; sourceTree = "<group>"; };
+		D844005B1D6DA00600B8ADF3 /* AddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostViewController.m; sourceTree = "<group>"; };
+		D844005D1D6DA01300B8ADF3 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		D844005E1D6DA01300B8ADF3 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		D84400601D6DA04000B8ADF3 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D84400611D6DA04000B8ADF3 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		D84400641D6DA0EB00B8ADF3 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		D84400651D6DA0EB00B8ADF3 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		D844006C1D6DA31100B8ADF3 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D84400731D6DA7E400B8ADF3 /* FeedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedNavigationController.h; sourceTree = "<group>"; };
+		D84400741D6DA7E400B8ADF3 /* FeedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedNavigationController.m; sourceTree = "<group>"; };
+		D84400761D6DA7FC00B8ADF3 /* EventNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNavigationController.h; sourceTree = "<group>"; };
+		D84400771D6DA7FC00B8ADF3 /* EventNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNavigationController.m; sourceTree = "<group>"; };
+		D84400791D6DA80900B8ADF3 /* CityNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityNavigationController.h; sourceTree = "<group>"; };
+		D844007A1D6DA80900B8ADF3 /* CityNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityNavigationController.m; sourceTree = "<group>"; };
+		D844007C1D6DA82000B8ADF3 /* AddPostNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostNavigationController.h; sourceTree = "<group>"; };
+		D844007D1D6DA82000B8ADF3 /* AddPostNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostNavigationController.m; sourceTree = "<group>"; };
+		D844007F1D6DA83200B8ADF3 /* NotificationNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationNavigationController.h; sourceTree = "<group>"; };
+		D84400801D6DA83200B8ADF3 /* NotificationNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +98,16 @@
 				D84400351D6D77E600B8ADF3 /* AppDelegate.m */,
 				D84400371D6D77E600B8ADF3 /* ViewController.h */,
 				D84400381D6D77E600B8ADF3 /* ViewController.m */,
+				D84400671D6DA25A00B8ADF3 /* Helper */,
+				D844006D1D6DA7A400B8ADF3 /* TabNavigationControllers */,
+				D844004B1D6D9D2A00B8ADF3 /* MainTabBarController */,
+				D84400631D6DA0DB00B8ADF3 /* EventController */,
+				D84400591D6D9FF700B8ADF3 /* AddPostController */,
+				D84400581D6D9FC500B8ADF3 /* Feed */,
+				D84400571D6D9F5000B8ADF3 /* Notification */,
+				D84400521D6D9EFC00B8ADF3 /* CityItem */,
 				D844003A1D6D77E600B8ADF3 /* Main.storyboard */,
+				D84400481D6D84E900B8ADF3 /* StoryBoard */,
 				D844003D1D6D77E600B8ADF3 /* Assets.xcassets */,
 				D844003F1D6D77E600B8ADF3 /* LaunchScreen.storyboard */,
 				D84400421D6D77E600B8ADF3 /* Info.plist */,
@@ -77,6 +122,141 @@
 				D84400321D6D77E600B8ADF3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D84400481D6D84E900B8ADF3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D84400491D6D851B00B8ADF3 /* Main_StoryBoard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D844004B1D6D9D2A00B8ADF3 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D844004C1D6D9D5600B8ADF3 /* MainTabBarController.h */,
+				D844004D1D6D9D5600B8ADF3 /* MainTabBarController.m */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		D84400521D6D9EFC00B8ADF3 /* CityItem */ = {
+			isa = PBXGroup;
+			children = (
+				D84400531D6D9EFC00B8ADF3 /* CityItemViewController.h */,
+				D84400541D6D9EFC00B8ADF3 /* CityItemViewController.m */,
+			);
+			path = CityItem;
+			sourceTree = "<group>";
+		};
+		D84400571D6D9F5000B8ADF3 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D84400601D6DA04000B8ADF3 /* NotificationViewController.h */,
+				D84400611D6DA04000B8ADF3 /* NotificationViewController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		D84400581D6D9FC500B8ADF3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D844005D1D6DA01300B8ADF3 /* FeedViewController.h */,
+				D844005E1D6DA01300B8ADF3 /* FeedViewController.m */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D84400591D6D9FF700B8ADF3 /* AddPostController */ = {
+			isa = PBXGroup;
+			children = (
+				D844005A1D6DA00600B8ADF3 /* AddPostViewController.h */,
+				D844005B1D6DA00600B8ADF3 /* AddPostViewController.m */,
+			);
+			path = AddPostController;
+			sourceTree = "<group>";
+		};
+		D84400631D6DA0DB00B8ADF3 /* EventController */ = {
+			isa = PBXGroup;
+			children = (
+				D84400641D6DA0EB00B8ADF3 /* EventViewController.h */,
+				D84400651D6DA0EB00B8ADF3 /* EventViewController.m */,
+			);
+			path = EventController;
+			sourceTree = "<group>";
+		};
+		D84400671D6DA25A00B8ADF3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D84400681D6DA25A00B8ADF3 /* Constants */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D84400681D6DA25A00B8ADF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D844006C1D6DA31100B8ADF3 /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D844006D1D6DA7A400B8ADF3 /* TabNavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D844006E1D6DA7A400B8ADF3 /* AddPostNavigationController */,
+				D844006F1D6DA7A400B8ADF3 /* CityNavigationController */,
+				D84400701D6DA7A400B8ADF3 /* EventNavigationController */,
+				D84400711D6DA7A400B8ADF3 /* FeedNavigationController */,
+				D84400721D6DA7A400B8ADF3 /* NotificationNavigationController */,
+			);
+			path = TabNavigationControllers;
+			sourceTree = "<group>";
+		};
+		D844006E1D6DA7A400B8ADF3 /* AddPostNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D844007C1D6DA82000B8ADF3 /* AddPostNavigationController.h */,
+				D844007D1D6DA82000B8ADF3 /* AddPostNavigationController.m */,
+			);
+			path = AddPostNavigationController;
+			sourceTree = "<group>";
+		};
+		D844006F1D6DA7A400B8ADF3 /* CityNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D84400791D6DA80900B8ADF3 /* CityNavigationController.h */,
+				D844007A1D6DA80900B8ADF3 /* CityNavigationController.m */,
+			);
+			path = CityNavigationController;
+			sourceTree = "<group>";
+		};
+		D84400701D6DA7A400B8ADF3 /* EventNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D84400761D6DA7FC00B8ADF3 /* EventNavigationController.h */,
+				D84400771D6DA7FC00B8ADF3 /* EventNavigationController.m */,
+			);
+			path = EventNavigationController;
+			sourceTree = "<group>";
+		};
+		D84400711D6DA7A400B8ADF3 /* FeedNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D84400731D6DA7E400B8ADF3 /* FeedNavigationController.h */,
+				D84400741D6DA7E400B8ADF3 /* FeedNavigationController.m */,
+			);
+			path = FeedNavigationController;
+			sourceTree = "<group>";
+		};
+		D84400721D6DA7A400B8ADF3 /* NotificationNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D844007F1D6DA83200B8ADF3 /* NotificationNavigationController.h */,
+				D84400801D6DA83200B8ADF3 /* NotificationNavigationController.m */,
+			);
+			path = NotificationNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +318,7 @@
 			files = (
 				D84400411D6D77E600B8ADF3 /* LaunchScreen.storyboard in Resources */,
 				D844003E1D6D77E600B8ADF3 /* Assets.xcassets in Resources */,
+				D844004A1D6D851B00B8ADF3 /* Main_StoryBoard.storyboard in Resources */,
 				D844003C1D6D77E600B8ADF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +332,18 @@
 			files = (
 				D84400391D6D77E600B8ADF3 /* ViewController.m in Sources */,
 				D84400361D6D77E600B8ADF3 /* AppDelegate.m in Sources */,
+				D844007B1D6DA80900B8ADF3 /* CityNavigationController.m in Sources */,
+				D844005F1D6DA01300B8ADF3 /* FeedViewController.m in Sources */,
+				D84400661D6DA0EB00B8ADF3 /* EventViewController.m in Sources */,
+				D844005C1D6DA00600B8ADF3 /* AddPostViewController.m in Sources */,
+				D844007E1D6DA82000B8ADF3 /* AddPostNavigationController.m in Sources */,
+				D84400551D6D9EFC00B8ADF3 /* CityItemViewController.m in Sources */,
+				D84400811D6DA83200B8ADF3 /* NotificationNavigationController.m in Sources */,
+				D84400621D6DA04000B8ADF3 /* NotificationViewController.m in Sources */,
+				D84400781D6DA7FC00B8ADF3 /* EventNavigationController.m in Sources */,
+				D844004E1D6D9D5600B8ADF3 /* MainTabBarController.m in Sources */,
 				D84400331D6D77E600B8ADF3 /* main.m in Sources */,
+				D84400751D6DA7E400B8ADF3 /* FeedNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
