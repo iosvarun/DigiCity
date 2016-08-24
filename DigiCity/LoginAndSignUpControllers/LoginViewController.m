@@ -19,6 +19,7 @@
     NSLog(@"go to register screen");
     SignUpViewController *objSignUpVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SignUpViewController"];
     [self.navigationController pushViewController:objSignUpVC animated:YES];
+
 }
 
 @end
