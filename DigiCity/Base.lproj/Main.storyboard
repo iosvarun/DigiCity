@@ -66,6 +66,9 @@
                                     <constraint firstAttribute="height" constant="30" id="lYA-Xj-pQP"/>
                                 </constraints>
                                 <state key="normal" title="Skip&gt;&gt;"/>
+                                <connections>
+                                    <action selector="btnActionSkip:" destination="HcB-X5-uF7" eventType="touchUpInside" id="9BV-YF-bn3"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2A7-gi-6mV">
                                 <rect key="frame" x="40" y="104" width="240" height="140"/>
@@ -80,6 +83,9 @@
                                     <constraint firstAttribute="height" constant="30" id="eMF-9k-57N"/>
                                 </constraints>
                                 <state key="normal" title="Forgot Password"/>
+                                <connections>
+                                    <action selector="btnActionForgotPassword:" destination="HcB-X5-uF7" eventType="touchUpInside" id="k64-6X-pKG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-In-fNK">
                                 <rect key="frame" x="147" y="360" width="153" height="30"/>
@@ -124,6 +130,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login " id="5AL-RU-Trw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textFiledEmail" destination="zeh-0d-C7d" id="T1h-Hn-SF2"/>
+                        <outlet property="textFiledPassword" destination="83o-tZ-bFf" id="YxW-Jb-uHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfk-4t-QeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,14 @@
 #import "Constants.h"
 #import "AppDelegate.h"
 
+@interface LoginViewController(){
+    
+    __weak IBOutlet UITextField *textFiledEmail;
+    __weak IBOutlet UITextField *textFiledPassword;
+}
+
+@end
+
 @implementation LoginViewController
 
 -(void)viewDidLoad{
@@ -28,6 +36,28 @@
     [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
 }
 
+- (IBAction)btnActionSkip:(id)sender {
+    [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
+}
 
+- (IBAction)btnActionForgotPassword:(id)sender {
+    NSString *message;
+    NSString *title;
+    title = @"Enter email";
+    if ([textFiledEmail.text isEqualToString:@""])
+        message = @"Enter your email and tap on 'Forgot Password' to receive a link to reset";
+    else
+        message = @"Please enter a valid email address";
+    
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDestructive handler:nil];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 @end
