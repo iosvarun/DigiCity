@@ -10,6 +10,7 @@
 #define Constants_h
 
 #define AppDelegateCons() (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define kTabBarHideShowAnimationDelay 0.1
 
 // Define StoryBoard
 #define TabBarControllers_STORYBOARD                       ([UIStoryboard storyboardWithName:@"Main_StoryBoard" bundle:nil])

@@ -7,6 +7,7 @@
 //
 
 #import "EventViewController.h"
+#import "AppUtility.h"
 
 @interface EventViewController ()
 
@@ -24,6 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+//    [AppUtility hideTabBar:YES];
+    
+}
 /*
 #pragma mark - Navigation
 

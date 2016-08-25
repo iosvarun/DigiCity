@@ -160,16 +160,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-G0-K1P">
                                                 <rect key="frame" x="0.0" y="150" width="320" height="358"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-M8-Btt">
-                                                        <rect key="frame" x="10" y="138" width="300" height="45"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="V5B-dX-EFD"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKk-Tb-eTS">
-                                                        <rect key="frame" x="10" y="193" width="300" height="45"/>
+                                                        <rect key="frame" x="10" y="191" width="300" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="zGu-Bg-2lh"/>
                                                         </constraints>
@@ -177,7 +169,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Mobile No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JK1-mG-NDg">
-                                                        <rect key="frame" x="10" y="248" width="300" height="45"/>
+                                                        <rect key="frame" x="10" y="246" width="300" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="2cJ-t1-oSw"/>
                                                         </constraints>
@@ -185,9 +177,17 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Strong Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjZ-Jn-TcQ">
-                                                        <rect key="frame" x="10" y="303" width="300" height="45"/>
+                                                        <rect key="frame" x="10" y="301" width="300" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="HyD-Ib-b0x"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-M8-Btt">
+                                                        <rect key="frame" x="10" y="136" width="300" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="V5B-dX-EFD"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -199,25 +199,23 @@
                                                     <constraint firstItem="JK1-mG-NDg" firstAttribute="top" secondItem="EKk-Tb-eTS" secondAttribute="bottom" constant="10" id="GN4-Fh-2D7"/>
                                                     <constraint firstAttribute="bottom" secondItem="qjZ-Jn-TcQ" secondAttribute="bottom" constant="10" id="Gbw-EF-5FT"/>
                                                     <constraint firstItem="EKk-Tb-eTS" firstAttribute="leading" secondItem="PFV-G0-K1P" secondAttribute="leading" constant="10" id="PWl-Sh-O60"/>
+                                                    <constraint firstItem="BBb-M8-Btt" firstAttribute="top" secondItem="PFV-G0-K1P" secondAttribute="top" constant="11" id="SDC-PP-kSh"/>
                                                     <constraint firstAttribute="trailing" secondItem="qjZ-Jn-TcQ" secondAttribute="trailing" constant="10" id="Vk2-mf-bRN"/>
                                                     <constraint firstItem="EKk-Tb-eTS" firstAttribute="top" secondItem="BBb-M8-Btt" secondAttribute="bottom" constant="10" id="Wwl-us-1pX"/>
                                                     <constraint firstAttribute="trailing" secondItem="JK1-mG-NDg" secondAttribute="trailing" constant="10" id="XIo-JA-BIG"/>
                                                     <constraint firstAttribute="trailing" secondItem="EKk-Tb-eTS" secondAttribute="trailing" constant="10" id="XjC-O5-sy8"/>
                                                     <constraint firstItem="qjZ-Jn-TcQ" firstAttribute="leading" secondItem="PFV-G0-K1P" secondAttribute="leading" constant="10" id="dRb-68-dZc"/>
-                                                    <constraint firstItem="qjZ-Jn-TcQ" firstAttribute="top" secondItem="JK1-mG-NDg" secondAttribute="bottom" constant="10" id="h2g-Jg-WTh"/>
-                                                    <constraint firstItem="JK1-mG-NDg" firstAttribute="top" secondItem="EKk-Tb-eTS" secondAttribute="bottom" constant="10" id="lHJ-0V-hhp"/>
+                                                    <constraint firstItem="BBb-M8-Btt" firstAttribute="top" secondItem="PFV-G0-K1P" secondAttribute="top" constant="136" id="kf6-Sf-Awp"/>
                                                     <constraint firstItem="JK1-mG-NDg" firstAttribute="leading" secondItem="PFV-G0-K1P" secondAttribute="leading" constant="10" id="phP-rx-Yn8"/>
-                                                    <constraint firstItem="BBb-M8-Btt" firstAttribute="top" secondItem="PFV-G0-K1P" secondAttribute="top" constant="10" id="qDN-bV-Woa"/>
                                                     <constraint firstItem="qjZ-Jn-TcQ" firstAttribute="top" secondItem="JK1-mG-NDg" secondAttribute="bottom" constant="10" id="qSn-W9-GzU"/>
                                                     <constraint firstAttribute="trailing" secondItem="BBb-M8-Btt" secondAttribute="trailing" constant="10" id="ttN-Mh-h2K"/>
-                                                    <constraint firstItem="EKk-Tb-eTS" firstAttribute="top" secondItem="BBb-M8-Btt" secondAttribute="bottom" constant="10" id="vgb-RD-0qv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qjZ-Jn-TcQ" secondAttribute="bottom" constant="12" id="uvX-6T-N67"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="qDN-bV-Woa"/>
-                                                        <exclude reference="vgb-RD-0qv"/>
-                                                        <exclude reference="lHJ-0V-hhp"/>
-                                                        <exclude reference="h2g-Jg-WTh"/>
+                                                        <exclude reference="SDC-PP-kSh"/>
+                                                        <exclude reference="Gbw-EF-5FT"/>
+                                                        <exclude reference="uvX-6T-N67"/>
                                                     </mask>
                                                 </variation>
                                             </view>
@@ -241,9 +239,21 @@
                                             <constraint firstAttribute="trailing" secondItem="kz6-BB-g84" secondAttribute="trailing" id="F0h-XB-pRt"/>
                                             <constraint firstAttribute="bottom" secondItem="PFV-G0-K1P" secondAttribute="bottom" id="J9f-io-CxJ"/>
                                             <constraint firstAttribute="trailing" secondItem="PFV-G0-K1P" secondAttribute="trailing" id="btV-45-Qzb"/>
+                                            <constraint firstAttribute="bottom" secondItem="PFV-G0-K1P" secondAttribute="bottom" id="gXM-Qm-zlU"/>
                                             <constraint firstItem="PFV-G0-K1P" firstAttribute="leading" secondItem="TIu-dx-y6L" secondAttribute="leading" id="h9f-0j-AB9"/>
+                                            <constraint firstItem="PFV-G0-K1P" firstAttribute="top" secondItem="kz6-BB-g84" secondAttribute="bottom" id="kWB-cz-nPX"/>
                                             <constraint firstItem="kz6-BB-g84" firstAttribute="top" secondItem="TIu-dx-y6L" secondAttribute="top" id="l09-JY-hoq"/>
+                                            <constraint firstAttribute="trailing" secondItem="PFV-G0-K1P" secondAttribute="trailing" id="laz-w9-2cg"/>
+                                            <constraint firstItem="PFV-G0-K1P" firstAttribute="leading" secondItem="TIu-dx-y6L" secondAttribute="leading" id="nGU-dL-Voe"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gXM-Qm-zlU"/>
+                                                <exclude reference="kWB-cz-nPX"/>
+                                                <exclude reference="laz-w9-2cg"/>
+                                                <exclude reference="nGU-dL-Voe"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -287,6 +297,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="constraints_scrollView_top" destination="DKw-SM-yUz" id="SIB-QZ-fCo"/>
                         <outlet property="containerView_textFields" destination="PFV-G0-K1P" id="IwG-O3-B3a"/>
                         <outlet property="contentView" destination="TIu-dx-y6L" id="CiI-5r-ZyR"/>
                         <outlet property="scrollView" destination="blb-8l-wM2" id="H9k-Va-j9R"/>

@@ -7,8 +7,12 @@
 //
 
 #import "CityItemViewController.h"
+#import "CityCollectionViewCell.h"
 
-@interface CityItemViewController ()
+@interface CityItemViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property (nonatomic, weak) IBOutlet UICollectionView *cityCollectionView;
+@property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
@@ -16,9 +20,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSMutableArray *firstSection = [[NSMutableArray alloc] init];
+    NSMutableArray *secondSection = [[NSMutableArray alloc] init];
+    for (int i=0; i<50; i++) {
+        [firstSection addObject:[NSString stringWithFormat:@"Cell %d", i]];
+        [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
+    }
+    self.dataArray = [[NSArray alloc] initWithObjects:firstSection, nil];
     // Do any additional setup after loading the view.
 }
 
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return [self.dataArray count];
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
+    return [sectionArray count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *cellIdentifier = @"CityCollectionViewCell";
+    
+    CityCollectionViewCell *cell = (CityCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
+    NSString *cellData = [data objectAtIndex:indexPath.row];
+    [cell.cityItemTitle setText:cellData];
+    
+    return cell;
+
+    
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+
+    NSLog(@"%@",[self.dataArray objectAtIndex:indexPath.row]);
+  
+   
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

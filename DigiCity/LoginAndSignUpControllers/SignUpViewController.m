@@ -9,7 +9,7 @@
 #import "SignUpViewController.h"
 #import "AppDelegate.h"
 #import "Constants.h"
-@interface SignUpViewController(){
+@interface SignUpViewController()<UITextFieldDelegate>{
     
     __weak IBOutlet UIScrollView *scrollView;
     __weak IBOutlet UIView *contentView;
@@ -21,6 +21,10 @@
     __weak IBOutlet UITextField *textField_email;
     float keyboardHeight;
 
+    
+    //Constraints
+    __weak IBOutlet NSLayoutConstraint *constraints_scrollView_top;
+    
 }
 
 
@@ -44,19 +48,32 @@
     NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
     CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
     keyboardHeight = keyboardFrameBeginRect.size.height;
+    constraints_scrollView_top.constant = -keyboardHeight;
     NSLog(@"%f",keyboardFrameBeginRect.size.height);
 
 }
 
 -(void)keyboardWillHide:(NSNotification *)notification{
-    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-    scrollView.contentInset = contentInsets;
-    scrollView.scrollIndicatorInsets = contentInsets;
-    [scrollView setContentOffset:CGPointMake(0, 0)];
+//    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+//    scrollView.contentInset = contentInsets;
+//    scrollView.scrollIndicatorInsets = contentInsets;
+//    [scrollView setContentOffset:CGPointMake(0, 0)];
+//    
+//    [scrollView setFrame:CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height)];
+    constraints_scrollView_top.constant = 0;
 }
 
 #pragma mark - UIButton Action
 - (IBAction)btnActionRegister:(id)sender {
     [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
+}
+
+#pragma mark - UITextField Delegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    return YES;
 }
 @end
