@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75A2FB521D6E123100EDCB9C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2FB511D6E123100EDCB9C /* LoginViewController.m */; };
 		75A2FB551D6E177700EDCB9C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2FB541D6E177700EDCB9C /* SignUpViewController.m */; };
+		75A2FB581D6EB86D00EDCB9C /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2FB571D6EB86D00EDCB9C /* ForgotPasswordViewController.m */; };
 		D84400331D6D77E600B8ADF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400321D6D77E600B8ADF3 /* main.m */; };
 		D84400361D6D77E600B8ADF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400351D6D77E600B8ADF3 /* AppDelegate.m */; };
 		D844003C1D6D77E600B8ADF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D844003A1D6D77E600B8ADF3 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		75A2FB511D6E123100EDCB9C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		75A2FB531D6E177700EDCB9C /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		75A2FB541D6E177700EDCB9C /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		75A2FB561D6EB86D00EDCB9C /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		75A2FB571D6EB86D00EDCB9C /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		D844002E1D6D77E600B8ADF3 /* DigiCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84400321D6D77E600B8ADF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D84400341D6D77E600B8ADF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				75A2FB511D6E123100EDCB9C /* LoginViewController.m */,
 				75A2FB531D6E177700EDCB9C /* SignUpViewController.h */,
 				75A2FB541D6E177700EDCB9C /* SignUpViewController.m */,
+				75A2FB561D6EB86D00EDCB9C /* ForgotPasswordViewController.h */,
+				75A2FB571D6EB86D00EDCB9C /* ForgotPasswordViewController.m */,
 			);
 			path = LoginAndSignUpControllers;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				D84400621D6DA04000B8ADF3 /* NotificationViewController.m in Sources */,
 				D84400781D6DA7FC00B8ADF3 /* EventNavigationController.m in Sources */,
 				D844004E1D6D9D5600B8ADF3 /* MainTabBarController.m in Sources */,
+				75A2FB581D6EB86D00EDCB9C /* ForgotPasswordViewController.m in Sources */,
 				D84400331D6D77E600B8ADF3 /* main.m in Sources */,
 				D84400751D6DA7E400B8ADF3 /* FeedNavigationController.m in Sources */,
 				75A2FB521D6E123100EDCB9C /* LoginViewController.m in Sources */,
