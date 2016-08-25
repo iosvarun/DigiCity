@@ -11,7 +11,9 @@
 
 #define AppDelegateCons() (AppDelegate *)[[UIApplication sharedApplication] delegate]
 
+// Define StoryBoard
 #define TabBarControllers_STORYBOARD                       ([UIStoryboard storyboardWithName:@"Main_StoryBoard" bundle:nil])
+#define Main_STORYBOARD ([UIStoryboard storyboardWithName:@"Main" bundle:nil])
 
 //Font Styles
 #define kCalibreBlack                       @"Calibre-Black"

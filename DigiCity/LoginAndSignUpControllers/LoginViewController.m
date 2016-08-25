@@ -8,6 +8,9 @@
 
 #import "LoginViewController.h"
 #import "SignUpViewController.h"
+#import "Constants.h"
+#import "AppDelegate.h"
+
 @implementation LoginViewController
 
 -(void)viewDidLoad{
@@ -15,11 +18,16 @@
 }
 
 #pragma mark - UIButton Action
-- (IBAction)btnGoToRegistrer:(id)sender {
+- (IBAction)btnActionToRegister:(id)sender {
     NSLog(@"go to register screen");
-    SignUpViewController *objSignUpVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SignUpViewController"];
+    SignUpViewController *objSignUpVC = [Main_STORYBOARD instantiateViewControllerWithIdentifier:@"SignUpViewController"];
     [self.navigationController pushViewController:objSignUpVC animated:YES];
 
 }
+- (IBAction)btnActionLogin:(id)sender {
+    [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
+}
+
+
 
 @end
