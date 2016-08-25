@@ -26,6 +26,9 @@
 		D844007B1D6DA80900B8ADF3 /* CityNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844007A1D6DA80900B8ADF3 /* CityNavigationController.m */; };
 		D844007E1D6DA82000B8ADF3 /* AddPostNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D844007D1D6DA82000B8ADF3 /* AddPostNavigationController.m */; };
 		D84400811D6DA83200B8ADF3 /* NotificationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84400801D6DA83200B8ADF3 /* NotificationNavigationController.m */; };
+		D8955D6F1D6EBA1700573089 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D6E1D6EBA1700573089 /* AppUtility.m */; };
+		D8955D721D6EC43200573089 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D711D6EC43200573089 /* FeedTableViewCell.m */; };
+		D8955D781D6ED89C00573089 /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D771D6ED89C00573089 /* CityCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,12 @@
 		D844007D1D6DA82000B8ADF3 /* AddPostNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostNavigationController.m; sourceTree = "<group>"; };
 		D844007F1D6DA83200B8ADF3 /* NotificationNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationNavigationController.h; sourceTree = "<group>"; };
 		D84400801D6DA83200B8ADF3 /* NotificationNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationNavigationController.m; sourceTree = "<group>"; };
+		D8955D6D1D6EBA1700573089 /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtility.h; sourceTree = "<group>"; };
+		D8955D6E1D6EBA1700573089 /* AppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtility.m; sourceTree = "<group>"; };
+		D8955D701D6EC43200573089 /* FeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewCell.h; sourceTree = "<group>"; };
+		D8955D711D6EC43200573089 /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
+		D8955D761D6ED89C00573089 /* CityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCollectionViewCell.h; sourceTree = "<group>"; };
+		D8955D771D6ED89C00573089 /* CityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,7 @@
 			children = (
 				D84400341D6D77E600B8ADF3 /* AppDelegate.h */,
 				D84400351D6D77E600B8ADF3 /* AppDelegate.m */,
+				D8955D6C1D6EB9DC00573089 /* AppUtility */,
 				75A2FB4C1D6E117D00EDCB9C /* LoginAndSignUpControllers */,
 				D84400671D6DA25A00B8ADF3 /* Helper */,
 				D844006D1D6DA7A400B8ADF3 /* TabNavigationControllers */,
@@ -159,6 +169,8 @@
 			children = (
 				D84400531D6D9EFC00B8ADF3 /* CityItemViewController.h */,
 				D84400541D6D9EFC00B8ADF3 /* CityItemViewController.m */,
+				D8955D761D6ED89C00573089 /* CityCollectionViewCell.h */,
+				D8955D771D6ED89C00573089 /* CityCollectionViewCell.m */,
 			);
 			path = CityItem;
 			sourceTree = "<group>";
@@ -177,6 +189,8 @@
 			children = (
 				D844005D1D6DA01300B8ADF3 /* FeedViewController.h */,
 				D844005E1D6DA01300B8ADF3 /* FeedViewController.m */,
+				D8955D701D6EC43200573089 /* FeedTableViewCell.h */,
+				D8955D711D6EC43200573089 /* FeedTableViewCell.m */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -272,6 +286,15 @@
 			path = NotificationNavigationController;
 			sourceTree = "<group>";
 		};
+		D8955D6C1D6EB9DC00573089 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D8955D6D1D6EBA1700573089 /* AppUtility.h */,
+				D8955D6E1D6EBA1700573089 /* AppUtility.m */,
+			);
+			path = AppUtility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,9 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84400361D6D77E600B8ADF3 /* AppDelegate.m in Sources */,
+				D8955D781D6ED89C00573089 /* CityCollectionViewCell.m in Sources */,
 				D844007B1D6DA80900B8ADF3 /* CityNavigationController.m in Sources */,
 				D844005F1D6DA01300B8ADF3 /* FeedViewController.m in Sources */,
 				D84400661D6DA0EB00B8ADF3 /* EventViewController.m in Sources */,
+				D8955D721D6EC43200573089 /* FeedTableViewCell.m in Sources */,
 				D844005C1D6DA00600B8ADF3 /* AddPostViewController.m in Sources */,
 				75A2FB551D6E177700EDCB9C /* SignUpViewController.m in Sources */,
 				D844007E1D6DA82000B8ADF3 /* AddPostNavigationController.m in Sources */,
@@ -355,6 +380,7 @@
 				D84400621D6DA04000B8ADF3 /* NotificationViewController.m in Sources */,
 				D84400781D6DA7FC00B8ADF3 /* EventNavigationController.m in Sources */,
 				D844004E1D6D9D5600B8ADF3 /* MainTabBarController.m in Sources */,
+				D8955D6F1D6EBA1700573089 /* AppUtility.m in Sources */,
 				D84400331D6D77E600B8ADF3 /* main.m in Sources */,
 				D84400751D6DA7E400B8ADF3 /* FeedNavigationController.m in Sources */,
 				75A2FB521D6E123100EDCB9C /* LoginViewController.m in Sources */,
