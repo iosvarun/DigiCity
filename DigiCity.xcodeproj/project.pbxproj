@@ -29,6 +29,9 @@
 		D8955D6F1D6EBA1700573089 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D6E1D6EBA1700573089 /* AppUtility.m */; };
 		D8955D721D6EC43200573089 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D711D6EC43200573089 /* FeedTableViewCell.m */; };
 		D8955D781D6ED89C00573089 /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D771D6ED89C00573089 /* CityCollectionViewCell.m */; };
+		D8955D821D70270B00573089 /* TabBarDetails_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8955D811D70270B00573089 /* TabBarDetails_Storyboard.storyboard */; };
+		D8955D851D7029BD00573089 /* CityItemListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D841D7029BD00573089 /* CityItemListController.m */; };
+		D8955D881D7029D700573089 /* CityItemDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8955D871D7029D700573089 /* CityItemDetailsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,11 @@
 		D8955D711D6EC43200573089 /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
 		D8955D761D6ED89C00573089 /* CityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCollectionViewCell.h; sourceTree = "<group>"; };
 		D8955D771D6ED89C00573089 /* CityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCollectionViewCell.m; sourceTree = "<group>"; };
+		D8955D811D70270B00573089 /* TabBarDetails_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarDetails_Storyboard.storyboard; sourceTree = "<group>"; };
+		D8955D831D7029BD00573089 /* CityItemListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityItemListController.h; sourceTree = "<group>"; };
+		D8955D841D7029BD00573089 /* CityItemListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityItemListController.m; sourceTree = "<group>"; };
+		D8955D861D7029D700573089 /* CityItemDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityItemDetailsController.h; sourceTree = "<group>"; };
+		D8955D871D7029D700573089 /* CityItemDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityItemDetailsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,8 @@
 			children = (
 				D84400341D6D77E600B8ADF3 /* AppDelegate.h */,
 				D84400351D6D77E600B8ADF3 /* AppDelegate.m */,
+				D8955D7A1D70255400573089 /* CityItemListController */,
+				D8955D791D70253B00573089 /* CityItemDetails */,
 				D8955D6C1D6EB9DC00573089 /* AppUtility */,
 				75A2FB4C1D6E117D00EDCB9C /* LoginAndSignUpControllers */,
 				D84400671D6DA25A00B8ADF3 /* Helper */,
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D84400491D6D851B00B8ADF3 /* Main_StoryBoard.storyboard */,
+				D8955D811D70270B00573089 /* TabBarDetails_Storyboard.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -295,6 +306,24 @@
 			path = AppUtility;
 			sourceTree = "<group>";
 		};
+		D8955D791D70253B00573089 /* CityItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D8955D861D7029D700573089 /* CityItemDetailsController.h */,
+				D8955D871D7029D700573089 /* CityItemDetailsController.m */,
+			);
+			path = CityItemDetails;
+			sourceTree = "<group>";
+		};
+		D8955D7A1D70255400573089 /* CityItemListController */ = {
+			isa = PBXGroup;
+			children = (
+				D8955D831D7029BD00573089 /* CityItemListController.h */,
+				D8955D841D7029BD00573089 /* CityItemListController.m */,
+			);
+			path = CityItemListController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +383,7 @@
 			files = (
 				D84400411D6D77E600B8ADF3 /* LaunchScreen.storyboard in Resources */,
 				D844003E1D6D77E600B8ADF3 /* Assets.xcassets in Resources */,
+				D8955D821D70270B00573089 /* TabBarDetails_Storyboard.storyboard in Resources */,
 				D844004A1D6D851B00B8ADF3 /* Main_StoryBoard.storyboard in Resources */,
 				D844003C1D6D77E600B8ADF3 /* Main.storyboard in Resources */,
 			);
@@ -366,8 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8955D881D7029D700573089 /* CityItemDetailsController.m in Sources */,
 				D84400361D6D77E600B8ADF3 /* AppDelegate.m in Sources */,
 				D8955D781D6ED89C00573089 /* CityCollectionViewCell.m in Sources */,
+				D8955D851D7029BD00573089 /* CityItemListController.m in Sources */,
 				D844007B1D6DA80900B8ADF3 /* CityNavigationController.m in Sources */,
 				D844005F1D6DA01300B8ADF3 /* FeedViewController.m in Sources */,
 				D84400661D6DA0EB00B8ADF3 /* EventViewController.m in Sources */,
