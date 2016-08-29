@@ -58,6 +58,7 @@
 
 
     NSLog(@"%@",[self.dataArray objectAtIndex:indexPath.row]);
+    
   
    
 }

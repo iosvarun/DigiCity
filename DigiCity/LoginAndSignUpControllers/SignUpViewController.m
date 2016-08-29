@@ -54,12 +54,6 @@
 }
 
 -(void)keyboardWillHide:(NSNotification *)notification{
-//    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-//    scrollView.contentInset = contentInsets;
-//    scrollView.scrollIndicatorInsets = contentInsets;
-//    [scrollView setContentOffset:CGPointMake(0, 0)];
-//    
-//    [scrollView setFrame:CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height)];
     constraints_scrollView_top.constant = 0;
 }
 
