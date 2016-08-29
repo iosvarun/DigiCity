@@ -19,6 +19,9 @@
     __weak IBOutlet UITextField *textField_mobileNo;
     __weak IBOutlet UITextField *textField_password;
     __weak IBOutlet UITextField *textField_email;
+    
+    __weak IBOutlet UIImageView *profileImageView;
+    
     float keyboardHeight;
 
     
@@ -62,6 +65,10 @@
     [AppDelegateCons() setMainTabbarControllerAsWindowRoot];
 }
 
+- (IBAction)btnActionAddImage:(id)sender {
+    [self pickImageFromGallery];
+}
+
 #pragma mark - UITextField Delegate
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
 
@@ -69,5 +76,21 @@
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     return YES;
+}
+
+-(void)pickImageFromGallery{
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc]init];
+    imagePickerController.delegate = self;
+    imagePickerController.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePickerController animated:YES completion:nil];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+{
+    profileImageView.image = image;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    //UIImage *newImage = image;
 }
 @end
