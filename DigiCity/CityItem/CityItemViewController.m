@@ -8,6 +8,9 @@
 
 #import "CityItemViewController.h"
 #import "CityCollectionViewCell.h"
+#import "CityItemListController.h"
+#import "Constants.h"
+#import "AppUtility.h"
 
 @interface CityItemViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -30,6 +33,19 @@
     self.dataArray = [[NSArray alloc] initWithObjects:firstSection, nil];
     // Do any additional setup after loading the view.
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+    [AppUtility showTabBar:YES];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return [self.dataArray count];
@@ -56,15 +72,12 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
-
-    NSLog(@"%@",[self.dataArray objectAtIndex:indexPath.row]);
+    CityItemListController *objCityItemListController = [TabBarDetailsControllers_STORYBOARD instantiateViewControllerWithIdentifier:@"CityItemListController"];
+    [self.navigationController pushViewController:objCityItemListController animated:YES];
     
+//    NSLog(@"%@",[self.dataArray objectAtIndex:indexPath.row]);
   
    
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

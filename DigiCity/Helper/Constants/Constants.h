@@ -13,8 +13,11 @@
 #define kTabBarHideShowAnimationDelay 0.1
 
 // Define StoryBoard
-#define TabBarControllers_STORYBOARD                       ([UIStoryboard storyboardWithName:@"Main_StoryBoard" bundle:nil])
 #define Main_STORYBOARD ([UIStoryboard storyboardWithName:@"Main" bundle:nil])
+#define TabBarControllers_STORYBOARD                       ([UIStoryboard storyboardWithName:@"Main_StoryBoard" bundle:nil])
+#define TabBarDetailsControllers_STORYBOARD                       ([UIStoryboard storyboardWithName:@"TabBarDetails_Storyboard" bundle:nil])
+
+
 
 //Font Styles
 #define kCalibreBlack                       @"Calibre-Black"
