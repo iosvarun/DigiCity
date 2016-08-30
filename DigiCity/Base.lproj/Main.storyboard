@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3H-ZR-iVo">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3H-ZR-iVo">
                                 <rect key="frame" x="20" y="298" width="280" height="35"/>
                                 <color key="backgroundColor" red="0.31372549019607843" green="0.41176470588235292" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -76,6 +76,10 @@
                                         <rect key="frame" x="10" y="0.0" width="275" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChange:" destination="HcB-X5-uF7" eventType="editingChanged" id="ptB-ve-44V"/>
+                                            <outlet property="delegate" destination="HcB-X5-uF7" id="sgd-nX-qZn"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-v1-WmR">
                                         <rect key="frame" x="0.0" y="35" width="280" height="1"/>
@@ -88,6 +92,10 @@
                                         <rect key="frame" x="10" y="35" width="275" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChange:" destination="HcB-X5-uF7" eventType="editingChanged" id="uPI-zP-yQU"/>
+                                            <outlet property="delegate" destination="HcB-X5-uF7" id="uPU-C2-P34"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,6 +121,7 @@
                     <navigationItem key="navigationItem" title="Login " id="5AL-RU-Trw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="btnLogin" destination="F3H-ZR-iVo" id="wKr-gp-CUu"/>
                         <outlet property="textFiledEmail" destination="zeh-0d-C7d" id="T1h-Hn-SF2"/>
                         <outlet property="textFiledPassword" destination="83o-tZ-bFf" id="YxW-Jb-uHb"/>
                     </connections>
@@ -164,6 +173,9 @@
                                         <rect key="frame" x="10" y="0.0" width="270" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="G3j-nT-3wv" eventType="editingChanged" id="l5T-8J-kLF"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxU-o7-wnK">
                                         <rect key="frame" x="0.0" y="35" width="280" height="1"/>
@@ -176,6 +188,9 @@
                                         <rect key="frame" x="10" y="35" width="270" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="G3j-nT-3wv" eventType="editingChanged" id="LkW-qd-SNZ"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am9-f3-B1z">
                                         <rect key="frame" x="0.0" y="70" width="280" height="1"/>
@@ -188,6 +203,9 @@
                                         <rect key="frame" x="10" y="70" width="270" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="G3j-nT-3wv" eventType="editingChanged" id="Mad-WO-gjL"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMn-2J-nDb">
                                         <rect key="frame" x="0.0" y="105" width="280" height="1"/>
@@ -200,6 +218,9 @@
                                         <rect key="frame" x="10" y="105" width="270" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="G3j-nT-3wv" eventType="editingChanged" id="hcd-8y-R3K"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -210,9 +231,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-j0-VFO">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-j0-VFO">
                                 <rect key="frame" x="20" y="340" width="280" height="35"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.41176470590000003" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="LET ME IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,6 +253,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="btnRegister" destination="TQd-j0-VFO" id="IcR-Rx-brg"/>
                         <outlet property="containerView_textFields" destination="PFV-G0-K1P" id="IwG-O3-B3a"/>
                         <outlet property="profileImageView" destination="yEF-Eh-RWt" id="k6V-FV-bio"/>
                         <outlet property="textField_email" destination="EKk-Tb-eTS" id="whe-RD-11c"/>

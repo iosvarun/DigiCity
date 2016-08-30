@@ -15,6 +15,7 @@
     
     __weak IBOutlet UITextField *textFiledEmail;
     __weak IBOutlet UITextField *textFiledPassword;
+    __weak IBOutlet UIButton *btnLogin;
 }
 
 @end
@@ -70,4 +71,14 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+#pragma mark - UITextField Delegate
+- (IBAction)textFieldEditingChange:(id)sender {
+    if (textFiledEmail.text.length > 0 && textFiledPassword.text.length > 0 ) {
+        [btnLogin setAlpha:1.0];
+        [btnLogin setEnabled:YES];
+    }else{
+        [btnLogin setAlpha:0.5];
+        [btnLogin setEnabled:false];
+    }
+}
 @end

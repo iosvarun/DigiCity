@@ -22,6 +22,7 @@
     
     __weak IBOutlet UIImageView *profileImageView;
     
+    __weak IBOutlet UIButton *btnRegister;
     float keyboardHeight;
 
     
@@ -93,4 +94,16 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
     //UIImage *newImage = image;
 }
+
+#pragma mark - UITextField Delegate
+- (IBAction)textFieldEditingChanged:(id)sender {
+    if (textField_userName.text.length>0 && textField_email.text.length>0 && textField_mobileNo.text.length>0 && textField_password.text.length>0) {
+        btnRegister.alpha = 1.0;
+        [btnRegister setEnabled:YES];
+    }else{
+        btnRegister.alpha = 0.5;
+        [btnRegister setEnabled:NO];
+    }
+}
+
 @end
