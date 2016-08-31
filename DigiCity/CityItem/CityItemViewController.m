@@ -80,6 +80,21 @@
    
 }
 
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+        return UIEdgeInsetsMake(0, 0, 0, 0);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger width ;
+    if (CGRectGetWidth(collectionView.frame) <330) {
+        width = (CGRectGetWidth(collectionView.frame)-(1*2))/3;
+    }
+    else
+        width = (CGRectGetWidth(collectionView.frame)-(1*3))/4;
+    return CGSizeMake(width,84);
+}
+
 /*
 #pragma mark - Navigation
 
